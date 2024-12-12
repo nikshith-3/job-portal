@@ -1,0 +1,18 @@
+<div class="user-list-container">
+  <h2 class="title">User List</h2>
+  <div *ngIf="users.length === 0" class="no-users">
+    <p>No users available.</p>
+  </div>
+  <div *ngFor="let user of users" class="user-card">
+    <div class="user-avatar">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.EwG6x9w6RngqsKrPJYxULAHaHa&pid=Api&P=0&h=220" alt="User Avatar" />
+    </div>
+    <div class="user-details">
+      <h3 class="user-name">{{ user.username }}</h3>
+      <p>Role: <span class="role">{{ user.role }}</span></p>
+    </div>
+    <div class="user-actions">
+      <button class="btn-delete" (click)="deleteUser(user.id)">Delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<nav class="sidebar bg-primary text-light d-flex flex-column align-items-center">
+  <!-- User Avatar -->
+  <div class="sidebar-header my-4 text-center">
+    <img src="https://as1.ftcdn.net/v2/jpg/05/90/59/88/1000_F_590598870_TOcGd4cUZzPoEMlxSc7XYwcupHOE0vLM.webp" 
+         alt="User Avatar" 
+         class="rounded-circle shadow-lg mb-3" 
+         height="200px" 
+         width="200px">
+    <h5 class="mt-2">Welcome, User!</h5>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav flex-column w-100">
+    <li class="nav-item">
+      <a class="nav-link text-light d-flex align-items-center px-4 py-3" routerLink="jobs" routerLinkActive="active">
+        <i class="fa fa-briefcase me-3"></i> All Jobs
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light d-flex align-items-center px-4 py-3" routerLink="applied-jobs" routerLinkActive="active">
+        <i class="fa fa-check-circle me-3"></i> Applied Jobs
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light d-flex align-items-center px-4 py-3" routerLink="userprofile" routerLinkActive="active">
+        <i class="fa fa-user me-3"></i> User Profile
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light d-flex align-items-center px-4 py-3" routerLink="users" routerLinkActive="active">
+        <i class="fa fa-users me-3"></i> Manage Users
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light d-flex align-items-center px-4 py-3 logout-link" routerLink="/" routerLinkActive="">
+        <i class="fa fa-sign-out-alt me-3"></i> Logout
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="main-content py-4 px-5 shadow-lg bg-white rounded" style="margin-left: 25%;">
+  <router-outlet></router-outlet>
+</div>

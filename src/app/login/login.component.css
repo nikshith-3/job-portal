@@ -1,0 +1,108 @@
+ /* .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    margin-top: 0;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  */
+  .back {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/022/059/172/non_2x/programming-code-abstract-technology-background-of-software-developer-and-computer-script-generative-ai-photo.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh; 
+  }
+  .login-container {
+    width: 80%; /* Use a percentage for width to make it flexible */
+    max-width: 300px; /* Limit the maximum width */
+    position: relative;
+    left: 50%; /* Center the container horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    top: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Increase width for smaller screens */
+        top: 20%; /* Adjust vertical positioning */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%; /* Further increase width for very small screens */
+        top: 10%; /* Adjust vertical positioning */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+  
+  .login-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  

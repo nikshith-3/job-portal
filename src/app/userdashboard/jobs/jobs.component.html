@@ -1,0 +1,43 @@
+<div class="jobs-container">
+  <h2 class="page-title">All Jobs</h2>
+  <!-- <h3 class="job-count">{{ len }} jobs available</h3>
+
+  <div *ngIf="jobs.length === 0" class="no-jobs">
+    <p>No jobs available at the moment.</p>
+  </div> -->
+
+  <!-- <div *ngIf="jobs.length > 0" class="job-list">
+    <div *ngFor="let job of jobs" class="job-card">
+      <h3 class="job-title">{{ job.title }}</h3>
+      <p class="job-description">{{ job.description }}</p>
+      <button class="apply-btn" (click)="applyForJob(job.id)">Apply</button>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let j of jobss">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ j.title }}</h5>
+          <p class="card-text text-muted">
+            <strong>Description:</strong> {{ j.description }}
+          </p>
+          <p class="card-text">
+            <strong>Location:</strong> {{ j.location }}
+          </p>
+          <p class="card-text text-success">
+            <strong>Salary:</strong> {{ j.salary | currency:'INR' }}
+          </p>
+          <button class="btn btn-primary btn-sm me-2">
+            Apply Now
+          </button>
+          <button class="btn btn-outline-secondary btn-sm">
+            Save Job
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
